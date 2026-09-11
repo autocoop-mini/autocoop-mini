@@ -1,4 +1,4 @@
-# AutoCoop Mini 🐔📡
+# AutoCoop Mini
 
 **A Small-Scale Modular IoT Poultry Automation and Environmental Monitoring System**
 
@@ -6,7 +6,7 @@ AutoCoop Mini is a low-cost, scalable, and modular telemetry ecosystem built spe
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Small-scale and backyard poultry farmers in Sri Lanka face significant challenges in maintaining optimal coop conditions manually. Lack of continuous monitoring can lead to critical failures such as:
 * Irregular feeding and watering schedules.
@@ -17,18 +17,18 @@ Existing commercial automation systems target large-scale industrial poultry ope
 
 ---
 
-## ✨ Key Features & Architecture
+## Key Features & Architecture
 
-* 🌡️ **Environmental & Air Quality Telemetry:** Continuous tracking of ambient temperature, humidity, and hazardous gas/ammonia concentration levels.
-* 🚪 **Automated Door Management:** Servo-driven coop door control triggered by dusk/dawn ambient light transitions or custom scheduled timers.
-* 💨 **Smart Ventilation & Lighting:** Relay-controlled 12V DC ventilation fans and RTC-scheduled artificial lighting loops to optimize bird growth and egg laying cycles.
-* 💧 **Feed & Water Level Monitoring:** Ultrasonic range sensors track food and water reservoir levels, triggering real-time alerts when levels drop below critical thresholds.
-* 🌐 **Offline-First Local Fail-Safe:** Smart local C++ threshold loops on the ESP32 main controller ensure critical actuators (fans, heaters, doors) continue running safely even during local network or Wi-Fi outages.
-* 📡 **Modular Slave Expansion:** Wireless low-cost ESP32 slave nodes can be added to expand monitoring across multiple pens using ESP-NOW or MQTT relaying without requiring infrastructure redesigns.
+* **Environmental & Air Quality Telemetry:** Continuous tracking of ambient temperature, humidity, and hazardous gas/ammonia concentration levels.
+* **Automated Door Management:** Servo-driven coop door control triggered by dusk/dawn ambient light transitions or custom scheduled timers.
+* **Smart Ventilation & Lighting:** Relay-controlled 12V DC ventilation fans and RTC-scheduled artificial lighting loops to optimize bird growth and egg laying cycles.
+* **Feed & Water Level Monitoring:** Ultrasonic range sensors track food and water reservoir levels, triggering real-time alerts when levels drop below critical thresholds.
+* **Offline-First Local Fail-Safe:** Smart local C++ threshold loops on the ESP32 main controller ensure critical actuators (fans, heaters, doors) continue running safely even during local network or Wi-Fi outages.
+* **Modular Slave Expansion:** Wireless low-cost ESP32 slave nodes can be added to expand monitoring across multiple pens using ESP-NOW or MQTT relaying without requiring infrastructure redesigns.
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 ### **Hardware & Sensors**
 * **Primary Gateway / Core MCU:** ESP32 Microcontroller
@@ -54,7 +54,7 @@ Existing commercial automation systems target large-scale industrial poultry ope
 
 ---
 
-## 📐 System Architecture & Flow
+## System Architecture & Flow
 
 ```
 +-------------------------------------------------------------------------+
@@ -114,15 +114,15 @@ Existing commercial automation systems target large-scale industrial poultry ope
 
 ## 📊 System Objectives & Project Roadmap
 
-* [x] **Hardware Prototyping:** Design and integrate temperature, humidity, and ammonia gas sensor nodes.
-* [x] **Firmware Development:** Implement robust embedded C++ local threshold control loops for safe, cloud-independent offline execution.
-* [x] **MQTT & Cloud Pipeline:** Configure Mosquitto MQTT broker on Cloud VPS for real-time telemetry passing into Django application services.
-* [x] **Dashboard Development:** Create dynamic web dashboard using Django and WebSockets for telemetry visualization and remote actuation.
+* [ ] **Hardware Prototyping:** Design and integrate temperature, humidity, and ammonia gas sensor nodes.
+* [ ] **Firmware Development:** Implement robust embedded C++ local threshold control loops for safe, cloud-independent offline execution.
+* [ ] **MQTT & Cloud Pipeline:** Configure Mosquitto MQTT broker on Cloud VPS for real-time telemetry passing into Django application services.
+* [ ] **Dashboard Development:** Create dynamic web dashboard using Django and WebSockets for telemetry visualization and remote actuation.
 * [ ] **Stress & Field Testing:** Conduct a 7-day operational evaluation in a live small-pen farm environment to assess stability and reliability.
 
 ---
 
-## 👥 Project Team
+## Project Team
 
 **Special Term Team Engineering Project**  
 *Department of Electronic and Telecommunication Engineering*  
@@ -134,6 +134,6 @@ Existing commercial automation systems target large-scale industrial poultry ope
 | **250412N** | R. M. Minadith |
 | **250423A** | G. L. B. G. S. Nanayakkara |
 | **250428T** | L. G. H. M. Nawanjana |
-| **250429X** | M. N. Naweed |
+| **250429X** | M. N. Naweed (Project Concept) |
 
 ---
